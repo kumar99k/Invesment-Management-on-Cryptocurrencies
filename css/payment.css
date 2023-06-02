@@ -1,0 +1,64 @@
+body{
+	background: linear-gradient(80deg, #f3efef, #ffb68c, #619aeb,#f3efef, #89ff5e, #dae71e, #ff83c7);
+    background-size: 600% 600%;
+    animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.popup{
+	/* From https://css.glass */
+background: rgba(92, 64, 64, 0.44);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.5px);
+-webkit-backdrop-filter: blur(4.5px);
+border: 1px solid rgba(92, 64, 64, 0.25);
+
+  width:400px;
+ /* background: #00B9F1;
+  border-radius: 6px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color:#333
+}
+
+.open-popup{
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+	width: 100px;
+	margin-top: -50px;
+	border-radius: 50%;
+	box-shadow : 0 2px 5px rgba(0,0,0.2);
+}
+.popup h3{
+	font-style: 38px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+
+}
+.popup a button{
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px 0;
+	background: #6fd649;
+	color: #fff;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0,0,0.2);
+}
+
